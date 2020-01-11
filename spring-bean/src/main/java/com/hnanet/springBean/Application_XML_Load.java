@@ -19,21 +19,21 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.helpers.DefaultHandler;
 
-public class Application {
+public class Application_XML_Load {
 
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(Application_XML_Load.class);
 
 
     @Test
     public void test_XmlBeanFactory() {
-        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring-config.xml"));
+        BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("xml_load_spring-config.xml"));
         User user = beanFactory.getBean("userBean", User.class);
         logger.info("测试结果：{}", user.toString());
     }
 
     @Test
     public void test_ClassPathXmlApplicationContext() {
-        BeanFactory beanFactory = new ClassPathXmlApplicationContext("spring-config.xml");
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("xml_load_spring-config.xml");
         User user = beanFactory.getBean("userBean", User.class);
         logger.info("测试结果：{}", user.toString());
     }
@@ -42,7 +42,7 @@ public class Application {
     public void test_DocumentLoader() throws Exception {
 
         // 设置资源
-        EncodedResource encodedResource = new EncodedResource(new ClassPathResource("spring-config.xml"));
+        EncodedResource encodedResource = new EncodedResource(new ClassPathResource("xml_load_spring-config.xml"));
 
         // 加载解析
         InputSource inputSource = new InputSource(encodedResource.getResource().getInputStream());
