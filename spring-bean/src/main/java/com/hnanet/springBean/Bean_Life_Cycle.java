@@ -1,115 +1,56 @@
 package com.hnanet.springBean;
 
-import com.hnanet.springBean.bean.Employee;
-import com.hnanet.springBean.bean.User;
+import com.hnanet.springBean.service.UserService_Anno;
+import com.hnanet.springBean.service.UserService_Bean_Method;
+import com.hnanet.springBean.service.UserService_Imp_Spring;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 public class Bean_Life_Cycle {
 
     private static final Logger logger = LoggerFactory.getLogger(Bean_Life_Cycle.class);
 
+    /**
+     *
+     * UserService_Imp_Spring 无参 构造函数 被调用
+     * UserService_Imp_Spring afterPropertiesSet() 方法被调用
+     * UserService_Bean_Method 无参 构造函数 被调用
+     * UserService_Bean_Method init() 方法被调用
+     * 执行 PostConstruct 注解标注的方法
+     * Spring Context 初始化
+     * 从Spring Context 拿到 Bean
+     * User password = UserService_Imp_Spring password
+     * User password = UserService_Imp_Spring password
+     * User password = UserService_Imp_Spring password
+     * 执行 preDestroy 注解标注的方法
+     * UserService_Bean_Method destroy() 方法被调用：Closing resources
+     * UserService_Imp_Spring destroy() 方法被调用：Closing resources
+     * Spring Context 关闭
+     *
+     */
+
     @Test
     public void TestLife() {
-        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
 
-        System.out.println("Spring Context initialized");
+        // 这两个文件效果一样
+        //String path = "bean-life-cycle-noContextType-spring-config.xml";
+        String path = "bean-life-cycle-contextType-spring-config.xml";
+        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(path);
 
-        //MyEmployeeService service = ctx.getBean("myEmployeeService", MyEmployeeService.class);
-        EmployeeService service = ctx.getBean("employeeService", EmployeeService.class);
+        System.out.println("Spring Context 初始化");
 
-        System.out.println("Bean retrieved from Spring Context");
+        // 注意：这里的实现判断了 User 的 password 的值，被设置之后，不会再重新设置。
+        UserService_Imp_Spring userService_imp = ctx.getBean("userService_imp", UserService_Imp_Spring.class);
+        UserService_Bean_Method userService_method = ctx.getBean("userService_method", UserService_Bean_Method.class);
+        UserService_Anno userService_anno = ctx.getBean("userService_anno", UserService_Anno.class);
 
-        System.out.println("Employee Name=" + service.getEmployee().getName());
-
+        System.out.println("从Spring Context 拿到 Bean");
+        System.out.println("User password = " + userService_imp.getUser().getPassword());
+        System.out.println("User password = " + userService_method.getUser().getPassword());
+        System.out.println("User password = " + userService_anno.getUser().getPassword());
         ctx.close();
-        System.out.println("Spring Context Closed");
-    }
-}
-
-class EmployeeService implements InitializingBean, DisposableBean{
-
-    private static final Logger logger = LoggerFactory.getLogger(EmployeeService.class);
-    private Employee employee;
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-
-    public EmployeeService(){
-        System.out.println("EmployeeService 无参 构造函数 被调用");
-    }
-
-    @Override
-    public void destroy() throws Exception {
-        System.out.println("EmployeeService Closing resources");
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("EmployeeService initializing to dummy value");
-        if(employee.getName() == null){
-            employee.setName("Pankaj");
-        }
-    }
-}
-class MyEmployeeService{
-
-    private static final Logger logger = LoggerFactory.getLogger(MyEmployeeService.class);
-    private Employee employee;
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-
-    public MyEmployeeService(){
-        System.out.println("MyEmployeeService 无参 构造函数 被调用");
-    }
-
-    //pre-destroy method
-    public void destroy() throws Exception {
-        System.out.println("MyEmployeeService Closing resources");
-    }
-
-    //post-init method
-    public void init() throws Exception {
-        System.out.println("MyEmployeeService initializing to dummy value");
-        if(employee.getName() == null){
-            employee.setName("Pankaj");
-        }
-    }
-}
-class MyService {
-
-    private static final Logger logger = LoggerFactory.getLogger(MyService.class);
-    @PostConstruct
-    public void init(){
-        System.out.println("MyService init 方法 被调用");
-    }
-
-    public MyService(){
-        System.out.println("MyService 无参 构造函数 被调用");
-    }
-
-    @PreDestroy
-    public void destory(){
-        System.out.println("MyService destroy 方法 被调用");
+        System.out.println("Spring Context 关闭");
     }
 }

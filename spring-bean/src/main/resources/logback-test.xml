@@ -11,7 +11,7 @@
     <property name="LOG_HOME" value="logs"/>
     <!--定义日志文件名称变量值-->
     <property name="moudleName" value="wang-admin"/>
-    <!--ch.qos.logback.core.ConsoleAppender表示控制台输出-->
+    <!--ch.qos.logback.core.ConsoleAppender表示Console输出-->
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
@@ -28,7 +28,7 @@
         -->
         <encoder>
             <!--格式化输出：%d:表示日期    %thread:表示线程名     %-5level:级别从左显示5个字符宽度  %msg:日志消息    %n:是换行符-->
-            <pattern>%black(控制台-) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)</pattern>
+            <pattern>%black(Console -) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)</pattern>
             <charset>UTF-8</charset>
         </encoder>
 
@@ -39,16 +39,16 @@
                 noapplicableactionfor[springProfile]
             -->
             <springProfile name="dev">
-                <pattern>%black(dev 控制台-) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
+                <pattern>%black(dev Console -) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
             </springProfile>
 
             <springProfile name="!dev">
-                <pattern>%black(!dev 控制台-) %black(Console) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
+                <pattern>%black(!dev Console -)  %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
             </springProfile>
         </layout>
     </appender>
 
-    <!-- appender输出目的地（控制台、文件、远程服务器、数据库） -->
+    <!-- appender输出目的地（Console、文件、远程服务器、数据库） -->
     <!-- 滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
     <appender name="appLogAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--指定日志文件的名称-->
@@ -78,7 +78,7 @@
         </rollingPolicy>
         <!--日志输出格式：-->
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%black(控制台-) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
+            <pattern>%black(Console-) %red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)</pattern>
         </layout>
     </appender>
 
@@ -101,16 +101,18 @@
             additivity为false，则root不打印此类的信息，只有此logging打印，输出一份
             如果使用默认true，则root、此logging按此logging的level输出日志信息,输出两份
     -->
-    <logger name="org.springframework" level="debug" additivity="false">
+    <logger name="org.springframework" level="info" additivity="false">
         <appender-ref ref="stdout"/>
     </logger>
-
+    <logger name="com.hnanet.springBean" level="debug" additivity="false">
+        <appender-ref ref="stdout"/>
+    </logger>
     <!--
             root与logger是父子关系，没有特别定义则默认为root；
-            也是logger元素，最上层的logger，属性只有一个level，
+            也是logger元素，最上层的logger，属性只有一个level
     -->
     <root level="debug">
-        <!-- 控制台显示 -->
+        <!-- Console显示 -->
         <appender-ref ref="stdout"/>
         <!-- 记录到文件 -->
         <!-- <appender-ref ref="appLogAppender"/>-->

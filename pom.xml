@@ -22,7 +22,6 @@
         <slf4j.version>1.7.5</slf4j.version>
         <lombok.version>1.18.10</lombok.version>
         <junit.version>4.13</junit.version>
-
     </properties>
     <profiles>
         <profile>

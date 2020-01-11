@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 没有在这里初始化 User  -->
+    <bean name="user" class="com.hnanet.springBean.bean.User" />
+    <!--
+        userService 实现了 InitializingBean, DisposableBean 接口
+        会自动调用  1、无参 构造函数 2、InitializingBean.afterPropertiesSet() 3、DisposableBean.destroy()
+    -->
+    <bean name="userService_imp" class="com.hnanet.springBean.service.UserService_Imp_Spring">
+        <property name="user" ref="user"></property>
+    </bean>
+
+    <!--
+        myUserService 指定了 init() 方法和 destroy() 方法
+        在 XML 自定义的 init-method 和post-method 方法可以抛异常但是不能有参数
+        无需将Bean的实现直接依赖于spring的框架
+    -->
+    <bean name="userService_method" class="com.hnanet.springBean.service.UserService_Bean_Method"
+          init-method="init" destroy-method="destroy">
+        <property name="user" ref="user"></property>
+    </bean>
+
+    <!-- 使用@PostConstruct和@PreDestroy注解 -->
+    <bean name="userService_anno" class="com.hnanet.springBean.service.UserService_Anno">
+        <property name="user" ref="user"></property>
+    </bean>
+
+    <!-- 与其 <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" /> 效果一样 -->
+    <context:annotation-config/>
+</beans>
