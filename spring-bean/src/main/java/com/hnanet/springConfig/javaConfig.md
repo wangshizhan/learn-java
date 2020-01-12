@@ -10,6 +10,7 @@ JavaConfig 其实很简单，主要是通过 @Configuration 和 @Bean 来进行�
 JavaConfig 与 XML
 
 @Configuration
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -26,6 +27,7 @@ JavaConfig 与 XML
    
 </beans>
 ```
+
 @Bean
 ```xml
 <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
