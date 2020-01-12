@@ -11,6 +11,8 @@
     <modules>
         <module>basic</module>
         <module>spring-bean</module>
+        <module>spring-servlet</module>
+        <module>spring-mvc</module>
     </modules>
 
     <properties>
