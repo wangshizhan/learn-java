@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="no-singleton-student" class="com.hnanet.proxy.cglib2.Student" scope="prototype">
+        <constructor-arg name="id" value="i"/>
+        <constructor-arg name="name" value="Student wang"/>
+    </bean>
+    <bean id="no-singleton-teacher" class="com.hnanet.proxy.cglib2.Teacher">
+        <constructor-arg name="id" value="i"/>
+        <constructor-arg name="name" value="Teacher wang"/>
+    </bean>
+    <bean id="replacer" class="com.hnanet.proxy.cglib2.Replacer"/>
+
+    <!-- 这样的话就不会报 Abstract class not allowed for non-abstract beans 的错了 -->
+    <!-- 方法注入方式 -->
+    <bean id="myTestBean1" class="com.hnanet.proxy.cglib2.MyTestBean">
+        <!-- 指向非单例模式的bean，如果不是也不会报错，只是每次得到的都是相同引用的bean（同一个实例） -->
+        <lookup-method name="getUserBean" bean="no-singleton-student"/>
+        <replaced-method name="changedMethod" replacer="replacer"/>
+    </bean>
+    <bean id="myTestBean2" class="com.hnanet.proxy.cglib2.MyTestBean">
+        <lookup-method name="getUserBean" bean="no-singleton-teacher"/>
+        <replaced-method name="changedMethod" replacer="replacer"/>
+    </bean>
+
+</beans>

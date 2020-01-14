@@ -8,16 +8,16 @@
         http://www.springframework.org/schema/util
         https://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="beanPostProcessor" class="com.hnanet.springBean.interfaceMethod.MyBeanPostProcessor">
+    <bean id="beanPostProcessor" class="com.hnanet.springBean.接口方法初始化流程.MyBeanPostProcessor">
     </bean>
 
-    <bean id="instantiationAwareBeanPostProcessor" class="com.hnanet.springBean.interfaceMethod.MyInstantiationAwareBeanPostProcessor">
+    <bean id="instantiationAwareBeanPostProcessor" class="com.hnanet.springBean.接口方法初始化流程.MyInstantiationAwareBeanPostProcessor">
     </bean>
 
-    <bean id="beanFactoryPostProcessor" class="com.hnanet.springBean.interfaceMethod.MyBeanFactoryPostProcessor">
+    <bean id="beanFactoryPostProcessor" class="com.hnanet.springBean.接口方法初始化流程.MyBeanFactoryPostProcessor">
     </bean>
 
-    <bean id="person" class="com.hnanet.springBean.interfaceMethod.Person" init-method="myInit"
+    <bean id="person" class="com.hnanet.springBean.接口方法初始化流程.Person" init-method="myInit"
           destroy-method="myDestory" scope="singleton" p:name="张三" p:address="广州"
           p:phone="15900000000" />
 </beans>
