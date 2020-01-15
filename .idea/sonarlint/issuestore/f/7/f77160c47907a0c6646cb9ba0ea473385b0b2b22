@@ -1,0 +1,11 @@
+
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–İíøÿÿÿÿ
+}"squid:ClassVariableVisibilityCheck"PMake path a static final constant or non-public and provide accessors if needed.(‡ÛÛ?
+„"squid:ClassVariableVisibilityCheck"QMake menus a static final constant or non-public and provide accessors if needed.(ˆ¤Æñùÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"TMake compiler a static final constant or non-public and provide accessors if needed.(œ²°[
+~"squid:ClassVariableVisibilityCheck"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+"squid:ClassVariableVisibilityCheck"QMake title a static final constant or non-public and provide accessors if needed.(Å¬õ
+"squid:ClassVariableVisibilityCheck"QMake error a static final constant or non-public and provide accessors if needed.(¥©¼Š
+"squid:ClassVariableVisibilityCheck"SMake timeout a static final constant or non-public and provide accessors if needed.(Š¡Ğğ
+†"squid:ClassVariableVisibilityCheck"XMake outputFolder a static final constant or non-public and provide accessors if needed.(ÿœéŠ
+‹squid:UselessImportCheck"`Remove this unused import 'org.springframework.boot.context.properties.ConfigurationProperties'.(¦Õ¸Ç8÷Ù¹ú-

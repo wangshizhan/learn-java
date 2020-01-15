@@ -1,0 +1,12 @@
+
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ýáõìøÿÿÿÿ8Õ‰¨•ú-
+squid:UselessImportCheck
+"_Remove this unused import 'org.springframework.context.support.ClassPathXmlApplicationContext'.(•ËÛüÿÿÿÿ8Ÿ¤È¹ú-
+nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(îç‹Ìùÿÿÿÿ8Ù„—•ú-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(áÉä…øÿÿÿÿ8‰ùÒ¹ú-
+squid:UselessImportCheck	"fRemove this unused import 'org.springframework.context.annotation.AnnotationConfigApplicationContext'.(€¡¹;8“˜••ú-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ž¦žöúÿÿÿÿ8Ð º•ú-
+[squid:UselessImportCheck"+Remove this unused import 'org.junit.Test'.(ùžøèøÿÿÿÿ8Ÿ¤È¹ú-
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÝÌÕÝ
+squid:UselessImportCheck"`Remove this unused import 'org.springframework.context.support.FileSystemXmlApplicationContext'.(ÀŽãûÿÿÿÿ8…¾¹•ú-

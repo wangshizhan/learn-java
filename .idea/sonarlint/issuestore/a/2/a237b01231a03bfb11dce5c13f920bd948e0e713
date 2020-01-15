@@ -1,0 +1,26 @@
+
+V
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Μ½άό8¶ΐαμω-
+Fsquid:S16046"(Make this anonymous inner class a lambda(¨”Π”8Ϊ΅εμω-
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ιοάόÿÿÿÿ
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(©ΧμΑ8ξΪμω-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ΜΆ²―8ξΪμω-
+V
+squid:S106."9Replace this use of System.out or System.err by a logger.(©ΧμΑ8¶ΐαμω-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ΉψΟώϊÿÿÿÿ8ξΪμω-
+[
+squid:S106I"9Replace this use of System.out or System.err by a logger.(Κ—―Σϋÿÿÿÿ8¶ΐαμω-
+[
+squid:S106/"9Replace this use of System.out or System.err by a logger.(ΉψΟώϊÿÿÿÿ8¶ΐαμω-
+Fsquid:S14819")Remove this unused "flag" local variable.(Φύ$8Ϊ΅εμω-
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ΜΆ²―8¶ΐαμω-
+[
+squid:S1060"9Replace this use of System.out or System.err by a logger.(ν€¶οωÿÿÿÿ8¶ΐαμω-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ν€¶οωÿÿÿÿ8ξΪμω-
+[
+squid:S106;"9Replace this use of System.out or System.err by a logger.(©„‘¨ÿÿÿÿÿ8Ϊ΅εμω-

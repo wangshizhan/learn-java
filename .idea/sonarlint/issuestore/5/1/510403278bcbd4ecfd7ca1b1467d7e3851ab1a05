@@ -1,0 +1,8 @@
+
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(η§λεώÿÿÿÿ8‹©λω-
+©%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(η§λεώÿÿÿÿ8¶Ϊ‘μω-
+_squid:UselessImportCheck"4Remove this unused import 'org.slf4j.LoggerFactory'.(–ÿΪή8»Δ©λω-
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(η§λεώÿÿÿÿ8‹©λω-
+Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(ςΐ½ώÿÿÿÿ8ΝΙλω-
+qsquid:S2095/"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Ρ΄ΗÒψÿÿÿÿ8“Κλω-
+Wsquid:UselessImportCheck"-Remove this unused import 'org.slf4j.Logger'.(νΨ®68»Δ©λω-

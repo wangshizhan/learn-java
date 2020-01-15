@@ -1,0 +1,5 @@
+
+[squid:UselessImportCheck"+Remove this unused import 'org.junit.Test'.(שרטרÿÿÿÿ8ןÿ¥הש-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(״²פרÿÿÿÿ8ןÿ¥הש-
+]squid:S1610":Convert the abstract class "MyTestBean" into an interface.(û״ט‚ûÿÿÿÿ8׀ַ¿הש-
