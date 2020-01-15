@@ -10,6 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot</artifactId>
+    <properties>
+        <com.google.inject.guice.version>4.2.2</com.google.inject.guice.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -21,9 +24,26 @@
                     <artifactId>commons-logging</artifactId>
                 </exclusion>
             </exclusions>
-            <version>2.2.2.RELEASE</version>
+            <version>${org.springframework.boot.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${org.springframework.boot.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${org.springframework.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
+            <version>${org.springframework.boot.version}</version>
+        </dependency>
+-->
         <!-- Spring 使用 logback -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -36,6 +56,19 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- 纯 Java Annotation 依赖注入框架，催生并完善了 spring JavaConfig 子项目 -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${com.google.inject.guice.version}</version>
+        </dependency>
+        <!-- 纯 Java Annotation 依赖注入框架，加入 set map容器注入支持 -->
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+            <version>${com.google.inject.guice.version}</version>
         </dependency>
     </dependencies>
     <build>

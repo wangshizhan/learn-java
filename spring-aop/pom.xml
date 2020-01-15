@@ -14,6 +14,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring.version>4.3.25.RELEASE</spring.version>
+        <org.aspectj.version>1.9.5</org.aspectj.version>
     </properties>
     <dependencies>
         <!--
@@ -22,19 +23,16 @@
         spring-context：spring上下文节点
         spring-core：spring核心功能
         spring-expression：spring表达式相关表
-
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-aop</artifactId>
-                    <version>5.2.2.RELEASE</version>
-                    <scope>compile</scope>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-web</artifactId>
-                    <version>5.2.2.RELEASE</version>
-                    <scope>compile</scope>
-                </dependency>
+        -->
+        <!--
+        只需要导入 spring-webmvc 这一个包，maven就会自动下载以下依赖包
+        spring-core —— Spring的核心组件
+        spring-beans —— SpringIoC(依赖注入)的基础实现
+        spring-aop ——Spring的面向切面编程,提供AOP(面向切面编程)实现
+        spring-context —— Spring提供在基础IoC功能上的扩展服务
+        spring-expression —— Spring表达式语言
+        spring-web —— SpringMVC支持WEB端应用部署架构
+        spring-webmvc —— REST Web服务和Web应用的视图控制器的实现
         -->
         <!-- 1.spring核心功能 -->
         <dependency>
@@ -84,5 +82,26 @@
             <version>${spring.version}</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- 5.spring AOP -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- 5. AOP -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${org.aspectj.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- 5. AOP -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${org.aspectj.version}</version>
+        </dependency>
+
     </dependencies>
 </project>

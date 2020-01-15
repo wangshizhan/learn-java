@@ -1,0 +1,23 @@
+<xsd:schema
+        xmlns="http://hulk.com/schema"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://hulk.com/schema">
+    <xsd:complexType name="elemental1complexType">
+        <xsd:attribute name="name" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The elementname1 name. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="age" type="xsd:int">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The elementname1 age. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:element name="elemental1" type="elemental1complexType">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[ elementname1的文档 ]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

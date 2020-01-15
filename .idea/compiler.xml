@@ -11,6 +11,7 @@
         <module name="spring-resource" />
         <module name="spring-mvc" />
         <module name="spring-servlet" />
+        <module name="spring-boot-web" />
         <module name="spring-aop" />
         <module name="basic" />
         <module name="spring-boot" />

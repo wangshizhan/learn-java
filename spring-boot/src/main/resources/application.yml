@@ -1,3 +1,5 @@
 spring:
   profiles:
-    include: permission-config
+    include:
+      - permission-config
+      - madly

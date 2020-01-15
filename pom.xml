@@ -16,12 +16,40 @@
         <module>spring-resource</module>
         <module>spring-aop</module>
         <module>spring-boot</module>
+        <module>spring-boot-web</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <org.springframework.version>5.2.2.RELEASE</org.springframework.version>
+        <org.springframework.boot.version>2.2.2.RELEASE</org.springframework.boot.version>
         <!-- Logging -->
         <logback.version>1.0.13</logback.version>
         <slf4j.version>1.7.5</slf4j.version>

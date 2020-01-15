@@ -18,13 +18,13 @@ Spring 为此提供了一个 org.Springframework.bean.factory.FactoryBean的工�
 
 
 ## 开源上的使用
-- MyBatis-Spring
+### MyBatis-Spring
 ```text
     SqlSessionFactoryBean：提供一个SqlSessionFactory
     MapperFactoryBean：为每一个Mapper创建JDK动态代理对象
 ```
 
-- Dubbo 
+### Dubbo 
 ```text
     <dubbo:reference ...> com.alibaba.dubbo.config.spring.ReferenceBean
 ```
