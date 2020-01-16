@@ -1,0 +1,9 @@
+
+csquid:CallToDeprecatedMethod"6Remove this use of "XmlBeanFactory"; it is deprecated.(øè£ƒúÿÿÿÿ
+o
+squid:S135H"YReduce the total number of break and continue statements in this loop to use at most one.(¿óèæ
+…squid:S1192"iDefine a constant instead of duplicating this literal "spring/schema/xml-load-spring-config.xml" 3 times.(øè£ƒúÿÿÿÿ
+ksquid:S00100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê”˜ìøÿÿÿÿ
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹†ˆÜ
+fsquid:S00100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê«¹ë
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(˜î–«

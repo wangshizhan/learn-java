@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="material" class="com.hnanet._4_factoryBean.basic.Material">
+        <property name="name" value="羊毛"/>
+        <property name="weight" value="10"/>
+        <property name="pricePerGram" value="1200"/>
+    </bean>
+    <bean id="produceLocation" class="com.hnanet._4_factoryBean.basic.ProduceLocation">
+        <property name="distanceKm" value="100"/>
+        <property name="locationName" value="广东"/>
+        <property name="pricePerPerKm" value="3"/>
+    </bean>
+
+    <bean id="productFactoryBean" class="com.hnanet._4_factoryBean.basic.ProductFactoryBean">
+        <property name="material" ref="material"/>
+        <property name="produceLocation" ref="produceLocation"/>
+    </bean>
+</beans>

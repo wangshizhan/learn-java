@@ -1,0 +1,6 @@
+
+Fsquid:S1185m"(Remove this method to simply inherit it.(„òø¾8ü¹Âãú-
+squid:S4276²"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<Object>'(‹Øÿãøÿÿÿÿ8ü¹Âãú-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â¶’°
+\squid:S2589Ç"8Remove this expression which always evaluates to "false"(Ä¹‹ ûÿÿÿÿ8ü¹Âãú-
+zsquid:S4276 "[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<Object>'(ô–±8ü¹Âãú-

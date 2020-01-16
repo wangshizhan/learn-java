@@ -104,7 +104,7 @@
     <logger name="org.springframework" level="info" additivity="false">
         <appender-ref ref="stdout"/>
     </logger>
-    <logger name="com.hnanet.springBean" level="debug" additivity="false">
+    <logger name="com.hnanet._0_init" level="debug" additivity="false">
         <appender-ref ref="stdout"/>
     </logger>
     <!--

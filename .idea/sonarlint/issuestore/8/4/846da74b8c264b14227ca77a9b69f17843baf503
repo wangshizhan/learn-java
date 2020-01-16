@@ -1,0 +1,4 @@
+
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦©œE
+}squid:UselessImportCheck"MRemove this unused import 'org.springframework.beans.factory.DisposableBean'.(¦ê«ªøÿÿÿÿ8®ÜÄêú-
+`squid:S2094"BRemove this empty class, write its code or make it an "interface".(éâš‡8®ÜÄêú-

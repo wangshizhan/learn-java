@@ -1,8 +1,8 @@
 package com.hnanet;
 
-import com.hnanet.config.JavaConfig.ApplicationProperties;
-import com.hnanet.config.JavaConfig.XmlConfigProperties;
-import com.hnanet.config.JavaConfig.YmlConfigProperties;
+import com.hnanet.config.javaConfig.ApplicationProperties;
+import com.hnanet.config.javaConfig.XmlConfigProperties;
+import com.hnanet.config.javaConfig.YmlConfigProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

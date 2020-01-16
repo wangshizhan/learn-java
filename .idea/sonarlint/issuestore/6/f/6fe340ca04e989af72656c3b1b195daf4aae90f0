@@ -1,4 +1,0 @@
-
-Zsquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—
-¤%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ
-Ssquid:S2696"6Make the enclosing method "static" or remove this set.(ª³È68Ïá·‘ú-

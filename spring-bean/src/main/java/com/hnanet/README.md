@@ -1,0 +1,61 @@
+ApplicationContextAware：获取当前的ApplicationContext；
+BeanNameAware：获取当前的beanName;
+BeanClassLoaderAware：获取当前的ClassLoader;
+BeanFactoryAware：获取当前的BeanFactory;
+ApplicationEventPublisherAware：获取当前的ApplicationEventPublisher，用于发布事件；要接收事件的类可以实现ApplicationListener接口，并实现其中的onApplicationEvent方法。
+
+EnvironmentAware
+EmbeddedValueResolverAware
+ResourceLoaderAware
+MessageSourceAware
+用于其他各种Spring上下文信息的获取。
+
+使用：Bean类实现**Aware接口。
+
+2.
+BeanFactoryPostProcessor
+容器实例化任何其它bean之前读取配置元数据，并可以根据需要进行修改。
+BeanFactoryPostProcessor只定义了一个方法：postProcessBeanFactory(ConfigurableListableBeanFactory)。
+在所有bean的定义已经加载，但是还没有初始化bean的时候，Spring容器会调用此方法，并可以根据需要修改ConfigurableListableBeanFactory的内容，如如PropertySourcesPlaceholderConfigurer。
+
+使用：Bean类实现BeanFactoryPostProcessor接口，或调用AbstractApplicationContext.addBeanFactoryPostProcessor添加。
+
+3.
+ApplicationListener
+接收ApplicationEventMulticaster广播的事件，事件是ApplicationEvent及其子类。
+
+接收的是ApplicationEventPublisher发布的事件。
+
+
+使用：Bean类实现ApplicationListener接口并实现其定义的方法onApplicationEvent(E event)，或调用AbstractApplicaitonContext.addApplicationListener添加。
+
+
+4.
+BeanPostProcessor
+有两个方法，分别在InitializingBean前后执行，对bean对象进行处理。
+
+postProcessBeforeInitialization ：在InitializingBean和init-method前执行；
+postProcessAfterInitialization：在InitializingBean和init-method后执行；
+
+注：不能返回null，否则程序将不再往下进行。如不需要处理则返回原对象即可。
+
+使用：Bean类实现BeanPostProcessor接口，或调用AbstractBeanFactory. addBeanPostProcessor添加。
+
+5.
+InitializingBean
+在bean的各种属性设置完成后执行，用于执行自定义的初始化操作。
+
+执行 InitializingBean.afterPropertiesSet；
+在init-method之前执行;
+
+
+使用：Bean类实现InitializingBean接口。
+
+4.6 DisposableBean
+在bean销毁之前执行，用于执行销毁前的操作。
+
+执行 DisposableBean.destroy();
+在destroy-method之前执行；
+
+
+使用：Bean类实现DisposableBean接口。

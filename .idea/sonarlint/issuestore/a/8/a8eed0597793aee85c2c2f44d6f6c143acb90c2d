@@ -1,7 +1,0 @@
-
-°%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ù±ÖÈúÿÿÿÿ8â…ÿú-
-¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„Ş×·ÿÿÿÿÿ8Î±şú-
-Tsquid:S2696"6Make the enclosing method "static" or remove this set.(¬šú8Î±şú-
-°%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(İæÖÌıÿÿÿÿ8â…ÿú-
-°%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(üıÄ¢şÿÿÿÿ8â…ÿú-
-«%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ8â…ÿú-
