@@ -11,12 +11,9 @@
     <modules>
         <module>basic</module>
         <module>spring-bean</module>
-        <module>spring-servlet</module>
         <module>spring-mvc</module>
-        <module>spring-resource</module>
         <module>spring-aop</module>
         <module>spring-boot</module>
-        <module>spring-boot-web</module>
     </modules>
 
     <repositories>
