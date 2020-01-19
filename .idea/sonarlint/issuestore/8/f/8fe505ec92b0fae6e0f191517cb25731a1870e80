@@ -1,0 +1,4 @@
+
+hsquid:S1854"JRemove this useless assignment to local variable "customBeanFactoryAware".(Òè·8ÆÕÎõú-
+Ysquid:S1481";Remove this unused "customBeanFactoryAware" local variable.(Òè·8ÆÕÎõú-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(é¹»¿ÿÿÿÿÿ

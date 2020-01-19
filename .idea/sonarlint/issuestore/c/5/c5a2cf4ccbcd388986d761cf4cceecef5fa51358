@@ -1,0 +1,7 @@
+
+vsquid:UselessImportCheck"KRemove this unused import 'org.springframework.context.ApplicationContext'.(»Ô»¿8Êâ¶ˆû-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆŸğúùÿÿÿÿ8Ñİ‡û-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì‹íùøÿÿÿÿ
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ë¶ÆŸúÿÿÿÿ8Ñİ‡û-

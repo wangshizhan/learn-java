@@ -7,12 +7,12 @@
         https://www.springframework.org/schema/util/spring-util.xsd">
 
     <!-- 没有在这里初始化 User  -->
-    <bean name="user" class="com.hnanet._0_init.bean.User" />
+    <bean name="user" class="com.hnanet._0_init._0_lifeCycle.User" />
     <!--
         userService 实现了 InitializingBean, DisposableBean 接口
         会自动调用  1、无参 构造函数 2、InitializingBean.afterPropertiesSet() 3、DisposableBean.destroy()
     -->
-    <bean name="userService_imp" class="com.hnanet._0_init.service.UserService_Imp_Spring">
+    <bean name="customInter" class="com.hnanet._0_init._0_lifeCycle.CustomInter">
         <property name="user" ref="user"></property>
     </bean>
 
@@ -21,13 +21,13 @@
         在 XML 自定义的 init-method 和post-method 方法可以抛异常但是不能有参数
         无需将Bean的实现直接依赖于spring的框架
     -->
-    <bean name="userService_method" class="com.hnanet._0_init.service.UserService_Bean_Method"
+    <bean name="customMethod" class="com.hnanet._0_init._0_lifeCycle.CustomMethod"
           init-method="init" destroy-method="destroy">
         <property name="user" ref="user"></property>
     </bean>
 
     <!-- 使用@PostConstruct和@PreDestroy注解 -->
-    <bean name="userService_anno" class="com.hnanet._0_init.service.UserService_Anno">
+    <bean name="customAnno" class="com.hnanet._0_init._0_lifeCycle.CustomAnno">
         <property name="user" ref="user"></property>
     </bean>
 

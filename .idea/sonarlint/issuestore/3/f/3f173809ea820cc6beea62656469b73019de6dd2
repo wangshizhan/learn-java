@@ -1,0 +1,10 @@
+
+«%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¾ıˆ„8úÍ‡û-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğŞ‹8úÍ‡û-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ô—íğ8ÄüÓ‡û-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì‹íùøÿÿÿÿ
+[
+squid:S106$"9Replace this use of System.out or System.err by a logger.(¸Øùÿÿÿÿ8úÍ‡û-
+«%squid:RedundantThrowsDeclarationCheck#"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ˆ’€·8úÍ‡û-

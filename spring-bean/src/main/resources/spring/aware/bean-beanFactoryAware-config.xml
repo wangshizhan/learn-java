@@ -7,5 +7,5 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-<context:component-scan base-package="com.hnanet._1_aware.beanFactoryAware"/>
+<context:component-scan base-package="com.hnanet._3_aware.beanFactoryAware"/>
 </beans>

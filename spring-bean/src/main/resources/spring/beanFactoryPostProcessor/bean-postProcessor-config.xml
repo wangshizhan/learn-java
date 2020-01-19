@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="webPostProcessor" class="com.hnanet._2_beanFactoryPostProcessor.basic.WebBeanFactoryPostProcessor">
+    <bean id="webPostProcessor" class="com.hnanet._1_beanFactoryPostProcessor.basic.WebBeanFactoryPostProcessor">
         <property name="obscenties">
             <!--set 属性-->
             <set>
@@ -18,7 +18,7 @@
         </property>
     </bean>
 
-    <bean id="web" class="com.hnanet._2_beanFactoryPostProcessor.basic.Web">
+    <bean id="web" class="com.hnanet._1_beanFactoryPostProcessor.basic.Web">
         <property name="brand" value="Google"/>
         <property name="url" value="www.youtube.com"/>
     </bean>

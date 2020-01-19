@@ -32,16 +32,16 @@ public class LifeCycleTest {
     public void TestLife() {
 
         // 这两个文件效果一样
-        //String path = "bean-noContextType-config.xml";
-        String path = "spring/lifeCycle/bean-contextType-config.xml";
+        String path = "spring/lifeCycle/bean-noContextType-config.xml";
+        //String path = "spring/lifeCycle/bean-contextType-config.xml";
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(path);
 
         System.out.println("Spring Context 初始化");
 
         // 注意：这里的实现判断了 User 的 password 的值，被设置之后，不会再重新设置。
-        InterTest userService_imp = ctx.getBean("userService_imp", InterTest.class);
-        MethodTest userService_method = ctx.getBean("userService_method", MethodTest.class);
-        AnnoTest userService_anno = ctx.getBean("userService_anno", AnnoTest.class);
+        CustomInter userService_imp = ctx.getBean("customInter", CustomInter.class);
+        CustomMethod userService_method = ctx.getBean("customMethod", CustomMethod.class);
+        CustomAnno userService_anno = ctx.getBean("customAnno", CustomAnno.class);
 
         System.out.println("从Spring Context 拿到 Bean");
         System.out.println("User password = " + userService_imp.getUser().getPassword());

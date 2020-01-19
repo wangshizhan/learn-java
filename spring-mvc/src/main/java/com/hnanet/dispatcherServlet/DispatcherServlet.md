@@ -2,10 +2,34 @@
 
 > 底层是通过实现Sevlet或者Servlet类型的扩展【如：GenericServlet】来实现的
 
-![binaryTree](../../../../resources/images/spring-dispatcher.png "binaryTree")
+![binaryTree](../../../../resources/images/dispatcherServlet.png "binaryTree")
 
 
-
+### Aware
+```text 
+    在 Spring 中，Aware 类型的接口用于向 Spring “索要”一些框架中的信息。
+    比如当某个 bean 实现了 ApplicationContextAware 接口时，Spring 在运行时会将当前的 ApplicationContext 实例通过接口方法 setApplicationContext 传给该 bean。
+```
+### EnvironmentCapable
+```text
+    EnvironmentCapable 仅包含一个方法定义 getEnvironment，通过该方法可以获取到环境变量对象。
+    我们可以将 EnvironmentCapable 和 EnvironmentAware 接口配合使用
+```
+###  HttpServletBean
+```text
+    HttpServletBean 是 HttpServlet 抽象类的简单拓展。
+    HttpServletBean 覆写了父类中的无参 init 方法，并在该方法中将 ServletConfig 里的配置信息设置到子类对象中，比如 DispatcherServlet。
+```
+### FrameworkServlet
+```text
+    FrameworkServlet 是 Spring Web 框架中的一个基础类，该类会在初始化时创建一个容器。
+    同时该类覆写了 doGet、doPost 等方法，并将所有类型的请求委托给 doService 方法去处理。doService 是一个抽象方法，需要子类实现。
+```
+### DispatcherServlet
+```text
+    DispatcherServlet 主要的职责是协调各个组件工作。
+    DispatcherServlet 还初始化各种组件，比如 HandlerMapping、HandlerAdapter 等。
+```
 
 - Spring MVC 的核心
 

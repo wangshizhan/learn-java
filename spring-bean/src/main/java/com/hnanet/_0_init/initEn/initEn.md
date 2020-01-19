@@ -9,3 +9,7 @@
 ```
 ## 调用顺序
 通常实现接口的方法优先调用，配置的方法次之。
+
+
+@PostConstruct/@PreDestroy
+ContextStartedEvent/ContextClosedEvent

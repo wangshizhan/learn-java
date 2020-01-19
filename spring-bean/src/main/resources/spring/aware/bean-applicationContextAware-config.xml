@@ -7,6 +7,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean name="glmapperApplicationContext" class="com.hnanet._1_aware.applicationContextAware.CustomApplicationContextAware"/>
+    <bean name="glmapperApplicationContext" class="com.hnanet._3_aware.applicationContextAware.CustomApplicationContextAware"/>
 
 </beans>

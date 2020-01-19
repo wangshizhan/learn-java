@@ -17,7 +17,7 @@
         </property>
     </bean>
 
-    <bean id="student" class="com.hnanet._2_beanFactoryPostProcessor.properties.Student">
+    <bean id="student" class="com.hnanet._1_beanFactoryPostProcessor.properties.Student">
         <property name="name" value="oldName"/>
     </bean>
 

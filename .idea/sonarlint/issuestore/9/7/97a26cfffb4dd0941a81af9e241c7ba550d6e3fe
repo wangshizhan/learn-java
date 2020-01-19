@@ -1,21 +1,0 @@
-
-isquid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®øĞ¦
-O
-squid:S1061"9Replace this use of System.out or System.err by a logger.(§’â
-O
-squid:S1063"9Replace this use of System.out or System.err by a logger.(ËºÇú
-hsquid:S11922"QDefine a constant instead of duplicating this literal "User password = " 3 times.(ƒüÜ
-O
-squid:S1066"9Replace this use of System.out or System.err by a logger.(˜…«á
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ğÆÕÉ
-esquid:S00100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÛˆ
-T
-squid:S1064"9Replace this use of System.out or System.err by a logger.(³à½úÿÿÿÿ
-hsquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä²…"
-gsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(É÷ú’ıÿÿÿÿ
-Fsquid:S1068"*Remove this unused "logger" private field.(ï••üÿÿÿÿ
-N
-squid:S106*"9Replace this use of System.out or System.err by a logger.(ªÕÑG
-O
-squid:S1062"9Replace this use of System.out or System.err by a logger.(ƒüÜ
-isquid:S00117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÓéÂ

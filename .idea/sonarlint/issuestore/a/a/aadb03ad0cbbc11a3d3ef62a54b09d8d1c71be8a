@@ -1,7 +1,0 @@
-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠÏƒÙþÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.( Œ‹¨
-©%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ë”†‰øÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(‘¹¹Â

@@ -1,0 +1,3 @@
+
+¾squid:S4449"šAnnotate the parameter with @javax.annotation.Nullable in method 'createPropertySource' declaration, or make sure that null can not be passed as argument.(ôöÀÈúÿÿÿÿ8—Á‚¿ú-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–İíøÿÿÿÿ

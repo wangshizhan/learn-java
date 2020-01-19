@@ -1,0 +1,12 @@
+
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ç®8ğÉÛ‡û-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì‹íùøÿÿÿÿ
+usquid:UselessImportCheck"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8½ºê‡û-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÔÛ«Ù8ÆÛáˆû-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÔÛ«Ù8¡âˆû-
+V
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ÎÂ±¤8ğÉÛ‡û-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(øş±,8Ûä‡û-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(å”ÄÕ8¸ßˆû-

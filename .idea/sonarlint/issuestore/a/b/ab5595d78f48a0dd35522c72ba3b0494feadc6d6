@@ -1,0 +1,3 @@
+
+«%squid:RedundantThrowsDeclarationCheck"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ú±œ8ê£•õú-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(é¹»¿ÿÿÿÿÿ8õı™õú-

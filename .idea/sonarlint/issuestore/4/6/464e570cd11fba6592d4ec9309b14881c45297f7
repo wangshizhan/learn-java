@@ -1,0 +1,22 @@
+
+¤%squid:RedundantThrowsDeclarationCheck0"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(ú±œ
+T
+squid:S1065"9Replace this use of System.out or System.err by a logger.(ƒ‘¿Ïşÿÿÿÿ
+T
+squid:S106H"9Replace this use of System.out or System.err by a logger.(Íë¥Íùÿÿÿÿ
+O
+squid:S106C"9Replace this use of System.out or System.err by a logger.(ï«ì¹
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öøÎµşÿÿÿÿ
+T
+squid:S106-"9Replace this use of System.out or System.err by a logger.(¤ÌîÊşÿÿÿÿ
+T
+squid:S106?"9Replace this use of System.out or System.err by a logger.(åÔ©øÿÿÿÿ
+O
+squid:S106:"9Replace this use of System.out or System.err by a logger.(™à–
+T
+squid:S1061"9Replace this use of System.out or System.err by a logger.(äáè£ıÿÿÿÿ
+T
+squid:S106M"9Replace this use of System.out or System.err by a logger.(íòçùÿÿÿÿÿ
+[
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Éô®¾ıÿÿÿÿ8²ç’íú-
+¤%squid:RedundantThrowsDeclarationCheck9"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ

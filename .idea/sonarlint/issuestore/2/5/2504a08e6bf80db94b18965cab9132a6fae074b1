@@ -1,6 +1,0 @@
-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®çšœúÿÿÿÿ
-Þsquid:S1598"¿This file "Bean_Inner_Object.java" should be located in "com/hnanet/init" directory, not in "/Users/apple/IdeaProjects/learn/learn-java/spring-bean/src/main/java/com/hnanet/init/innerObject".(ÖË£Š8ôÈËêú-
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(öÄ¯ò
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Òÿìªúÿÿÿÿ
