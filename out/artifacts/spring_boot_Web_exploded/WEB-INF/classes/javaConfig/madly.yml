@@ -1,0 +1,43 @@
+---
+madly:
+  # Simple properties
+  port: 9000
+  host: mailer@mail.com
+  from: mailer@mail.com
+
+  # Map<String,Object>
+  mp:
+    k1:
+      password: pwdk1
+      authMethod: SHA3
+      username: k1
+    k2:
+      password: pwdk2
+      authMethod: SHA3
+      username: k2
+
+  # Object properties
+  credentials:
+    password: password
+    authMethod: SHA1
+    username: john
+
+  # Map Properties
+  additionalHeaders:
+    secure: true
+    redelivery: true
+
+  # List<Object>
+  cs:
+    -
+      password: cs1pwd
+      authMethod: SHA1
+      username: cs1
+    -
+      password: cs2pwd
+      authMethod: SHA2
+      username: cs2
+
+  #  List properties
+  recipients[1]: owner@mail.com
+  recipients[0]: admin@mail.com

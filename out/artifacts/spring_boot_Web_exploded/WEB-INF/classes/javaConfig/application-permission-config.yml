@@ -1,0 +1,8 @@
+##动态权限配置文件
+#List<Map<String, String>>
+permission-config:
+  perms:
+    - url: /cat
+      permission: roles[cat]
+    - url: /dog
+      permission: roles[dog]
