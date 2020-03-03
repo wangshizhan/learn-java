@@ -1,0 +1,18 @@
+
+Isquid:S1481"+Remove this unused "gender" local variable.(Ôõ¨8¢‘–ü-
+Qsquid:S1481".Remove this unused "introduce" local variable.(–ìÅõşÿÿÿÿ8¢‘–ü-
+Rsquid:S1481"/Remove this unused "mypassword" local variable.(’ôÇ°üÿÿÿÿ8¢‘–ü-
+Hsquid:S1481"*Remove this unused "email" local variable.(×Áâ¹8¢‘–ü-
+_squid:S1854"<Remove this useless assignment to local variable "isAccept".(•¯Éşÿÿÿÿ8¢‘–ü-
+Ksquid:S1481 ".Remove this unused "favorites" local variable.(¹ƒ8¢‘–ü-
+Xsquid:S1854":Remove this useless assignment to local variable "gender".(Ôõ¨8¢‘–ü-
+Ksquid:S1481"-Remove this unused "isAccept" local variable.(ö™×Ÿ8¢‘–ü-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ó•ƒ¤ûÿÿÿÿ
+_squid:S1854"<Remove this useless assignment to local variable "username".(éœë¾øÿÿÿÿ8¢‘–ü-
+asquid:S1854">Remove this useless assignment to local variable "mypassword".(’ôÇ°üÿÿÿÿ8¢‘–ü-
+`squid:S1854"=Remove this useless assignment to local variable "introduce".(–ìÅõşÿÿÿÿ8¢‘–ü-
+Wsquid:S1854"9Remove this useless assignment to local variable "email".(×Áâ¹8¢‘–ü-
+Zsquid:S1854 "=Remove this useless assignment to local variable "favorites".(¹ƒ8¢‘–ü-
+Zsquid:S1854"<Remove this useless assignment to local variable "isAccept".(ÌÎšï8¢‘–ü-
+Psquid:S1481"-Remove this unused "username" local variable.(éœë¾øÿÿÿÿ8¢‘–ü-
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(¥Éêøÿÿÿÿ8²ı–ü-

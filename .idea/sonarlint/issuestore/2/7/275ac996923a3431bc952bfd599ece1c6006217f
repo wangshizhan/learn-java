@@ -1,0 +1,4 @@
+
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û™Ÿøøÿÿÿÿ
+Wsquid:UselessImportCheck"-Remove this unused import 'org.slf4j.Logger'.(íØ®68ö ¬Ûü-
+_squid:UselessImportCheck"4Remove this unused import 'org.slf4j.LoggerFactory'.(–ÿÚÞ8ö ¬Ûü-

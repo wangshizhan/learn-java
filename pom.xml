@@ -14,6 +14,7 @@
         <module>spring-mvc</module>
         <module>spring-aop</module>
         <module>spring-boot</module>
+        <module>spring-boot-web</module>
     </modules>
 
     <repositories>
@@ -47,11 +48,16 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <org.springframework.version>5.2.2.RELEASE</org.springframework.version>
         <org.springframework.boot.version>2.2.2.RELEASE</org.springframework.boot.version>
+        <org.apache.maven.plugins.version>3.2.3</org.apache.maven.plugins.version>
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <org.springframework.springloaded.version>1.2.8.RELEASE</org.springframework.springloaded.version>
         <!-- Logging -->
-        <logback.version>1.0.13</logback.version>
+        <logback.version>1.2.3</logback.version>
         <slf4j.version>1.7.5</slf4j.version>
         <lombok.version>1.18.10</lombok.version>
         <junit.version>4.13</junit.version>
+
+        <org.apache.tomcat.version>8.5.50</org.apache.tomcat.version>
     </properties>
     <profiles>
         <profile>

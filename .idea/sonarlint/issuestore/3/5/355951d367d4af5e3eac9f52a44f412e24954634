@@ -1,0 +1,36 @@
+
+_squid:S34576"AFormat specifiers should be used instead of string concatenation.(†’äü8ÏÂ™šü-
+_squid:S34574"AFormat specifiers should be used instead of string concatenation.(õîºÖ8Ü¾šü-
+Bsquid:S1989r"$Add a "try/catch" block for "doGet".(ï¶ßû8¾„ûŒü-
+Qsquid:S1989p"3Add a "try/catch" block for "setCharacterEncoding".(±Œ©À8ã€õœü-
+[squid:S1854F"=Remove this useless assignment to local variable "interests".(¥¹Ğ8Èï«ü-
+dsquid:S3457-"AFormat specifiers should be used instead of string concatenation.(€†¹ ÿÿÿÿÿ8ÌÔ‡šü-
+Bsquid:S1989r"$Add a "try/catch" block for "doGet".(ï¶ßû8¾„ûŒü-
+Zsquid:S2629"7Use the built-in formatting to construct this argument.(ˆâÙıúÿÿÿÿ8¼¦–ü-
+usquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÚíŒüÿÿÿÿ8–©™šü-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ó•ƒ¤ûÿÿÿÿ8›¡®µü-
+Lsquid:S1481C")Remove this unused "code" local variable.(‰Ó¨ñüÿÿÿÿ8¿”¿ü-
+_squid:S3457/"AFormat specifiers should be used instead of string concatenation.(µÉ¸æ8•ºŠšü-
+[squid:S1854C"8Remove this useless assignment to local variable "code".(‰Ó¨ñüÿÿÿÿ8¿”¿ü-
+^squid:S3457)"AFormat specifiers should be used instead of string concatenation.(—×˜K8ÌÔ‡šü-
+psquid:S001171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôèµ8¨Ğšü-
+Zsquid:S2629:"7Use the built-in formatting to construct this argument.(ÍÜÌ£ÿÿÿÿÿ8—†¸–ü-
+gsquid:S1192"IDefine a constant instead of duplicating this literal "username" 4 times.(ÀÈ…8Ü¾šü-
+_squid:S3457+"AFormat specifiers should be used instead of string concatenation.(¾Ë€ğ8ÌÔ‡šü-
+Usquid:S26294"7Use the built-in formatting to construct this argument.(õîºÖ8Ü¾šü-
+Zsquid:S1854D"7Remove this useless assignment to local variable "pwd".(£ó úÿÿÿÿ8 “¢ü-
+Fsquid:S1989\"(Add a "try/catch" block for "getWriter".(¾šçŞ8¾„ûŒü-
+usquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’÷—Èüÿÿÿÿ8Î³“šü-
+isquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(–œ‹ù8äõÃü-
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(øåÖ8°İåü-
+dsquid:S3457S"AFormat specifiers should be used instead of string concatenation.(·İüùÿÿÿÿ8ë¹ÿü-
+dsquid:S3457:"AFormat specifiers should be used instead of string concatenation.(ÍÜÌ£ÿÿÿÿÿ8—†¸–ü-
+Lsquid:S1481F".Remove this unused "interests" local variable.(¥¹Ğ8Èï«ü-
+dsquid:S3457>"AFormat specifiers should be used instead of string concatenation.(öşóÛÿÿÿÿÿ8™êğü-
+Usquid:S26296"7Use the built-in formatting to construct this argument.(†’äü8ÏÂ™šü-
+Ksquid:S1481D"(Remove this unused "pwd" local variable.(£ó úÿÿÿÿ8 “¢ü-
+Zsquid:S2629S"7Use the built-in formatting to construct this argument.(·İüùÿÿÿÿ8ë¹ÿü-
+nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(Í…ÄËøÿÿÿÿ8¿”¿ü-
+^squid:S3457@"AFormat specifiers should be used instead of string concatenation.(ÚïùU8™êğü-
+dsquid:S3457"AFormat specifiers should be used instead of string concatenation.(ˆâÙıúÿÿÿÿ8¼¦–ü-
+_squid:S3457?"AFormat specifiers should be used instead of string concatenation.(†íşÎ8™êğü-

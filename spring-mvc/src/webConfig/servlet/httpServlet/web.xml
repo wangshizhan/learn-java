@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!-- 配置 ContextParam 全局参数 -->
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>customHttpServlet</servlet-name>
+        <servlet-class>com.hnanet.servlet.httpServlet.CustomHttpServlet</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>forezp</param-value>
+        </init-param>
+        <!-- Web 容器启动时就加载并实例化该 Servlet -->
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>preRegisterServlet</servlet-name>
+        <servlet-class>com.hnanet.servlet.httpServlet.PreRegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.hnanet.servlet.httpServlet.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>customHttpServlet</servlet-name>
+        <url-pattern>/customHttpServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>preRegisterServlet</servlet-name>
+        <url-pattern>/customHttpServlet/preRegister</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/customHttpServlet/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <!-- Get请求 我们可以通过更改 Tomcat 目录下，conf/server.xml 中的 Connector 中指定 URIEncoding=”UTF-8″ 参数 -->
+    <!-- Post 请求指定它发送的参数和值的编码，默认采用的是ISO-8859-1 ，Tomcat已经提供了完成这个功能的过滤器的例子或者内置了 -->
+    <!-- 1. 引入 org.apache.tomcat#tomcat-catalina 包 -->
+    <filter>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>setCharacterEncodingFilter</filter-name>
+        <!-- 写成/时，上传时会乱码 -->
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- 2. 引入 org.springframework#spring-web 貌似有问题.. -->
+<!--    <filter>-->
+<!--        <filter-name>encodingFilter</filter-name>-->
+<!--        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>encoding</param-name>-->
+<!--            <param-value>UTF-8</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>forceEncoding</param-name>-->
+<!--            <param-value>true</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>encodingFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+</web-app>

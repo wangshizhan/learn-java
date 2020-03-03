@@ -71,11 +71,18 @@
             <version>${com.google.inject.guice.version}</version>
         </dependency>
     </dependencies>
+
+    <packaging>jar</packaging>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${org.springframework.boot.version}</version>
+                <!-- 这样配置后，通过maven打出来的 jar 可以直接 执行，之后可以注册成服务   -->
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <form action="/springmvc/login" method="post">
+        <input type="text" name="name"/><br>
+        <input type="password" name="password"/><br>
+        <img id="img" title="CheckCode" onclick="flushCheckCode()" style="height:32px;"><br>
+        <input type="text" name="code"/><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+<script type="text/javascript">
+    var url='/springmvc/validate';
+    $(function(){
+        $('#img').attr('src',url);
+    })
+    function flushCheckCode() {
+        $('#img').attr('src', url+'?' + Math.random());
+    }
+</script>
+</html>

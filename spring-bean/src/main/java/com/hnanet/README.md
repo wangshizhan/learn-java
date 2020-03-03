@@ -6,6 +6,7 @@
     这个包括了BeanNameAware、BeanFactoryAware、InitializingBean和DiposableBean这些接口的方法
 
 ## 容器级 生命周期接口方法
+
     这个包括了 InstantiationAwareBeanPostProcessor 和 BeanPostProcessor 这两个接口实现，一般称它们的实现类为“后处理器”。
 
 ## 工厂后处理器接口方法

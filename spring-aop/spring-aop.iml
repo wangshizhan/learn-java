@@ -3,8 +3,11 @@
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="Bean Aop Cglib Spring Config" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/bean-aop-cglib-spring-config.xml</file>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/aop/bean-cglib-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/images/targetSource/bean-targetSource-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/aop/bean-aop-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/hnanet/aop/spring/anno/AopTest.java</file>
         </fileset>
       </configuration>
     </facet>
